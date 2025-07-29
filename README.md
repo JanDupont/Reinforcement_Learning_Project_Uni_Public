@@ -36,6 +36,8 @@ python test_trained.py results/pistonball_rl_governance/PPO_PistonBallRLlibEnvir
 
 # Evaluation
 
+> Checkpoint files too large for GitHub!
+
 ## Baseline
 
 ```sh
