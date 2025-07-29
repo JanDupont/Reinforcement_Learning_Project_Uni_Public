@@ -1,0 +1,14 @@
+:job_id:01000000
+:actor_name:RolloutWorker
+2025-06-21 14:49:44,274	INFO catalog.py:407 -- Wrapping <class 'ray_models.PistonParametricModel'> as None
+2025-06-21 14:49:44,459	INFO policy.py:1234 -- Policy (worker=2) running on CPU.
+2025-06-21 14:49:44,459	INFO torch_policy_v2.py:105 -- Found 0 visible cuda devices.
+2025-06-21 14:49:45,851	INFO util.py:118 -- Using connectors:
+2025-06-21 14:49:45,851	INFO util.py:119 --     AgentConnectorPipeline
+        ObsPreprocessorConnector
+        StateBufferConnector
+        ViewRequirementAgentConnector
+2025-06-21 14:49:45,851	INFO util.py:120 --     ActionConnectorPipeline
+        ConvertToNumpyConnector
+        NormalizeActionsConnector
+        ImmutableActionsConnector

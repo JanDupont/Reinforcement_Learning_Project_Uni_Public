@@ -1,0 +1,37 @@
+:job_id:01000000
+:actor_name:RolloutWorker
+2025-06-21 14:49:44,274	INFO catalog.py:407 -- Wrapping <class 'ray_models.PistonParametricModel'> as None
+2025-06-21 14:49:44,460	INFO policy.py:1234 -- Policy (worker=1) running on CPU.
+2025-06-21 14:49:44,460	INFO torch_policy_v2.py:105 -- Found 0 visible cuda devices.
+2025-06-21 14:49:45,851	INFO util.py:118 -- Using connectors:
+2025-06-21 14:49:45,851	INFO util.py:119 --     AgentConnectorPipeline
+        ObsPreprocessorConnector
+        StateBufferConnector
+        ViewRequirementAgentConnector
+2025-06-21 14:49:45,851	INFO util.py:120 --     ActionConnectorPipeline
+        ConvertToNumpyConnector
+        NormalizeActionsConnector
+        ImmutableActionsConnector
+2025-06-21 14:49:47,240	INFO rollout_worker.py:671 -- Generating sample batch of size 250
+2025-06-21 14:50:07,857	INFO rollout_worker.py:713 -- Completed sample batch:
+
+{ 'count': 250,
+  'policy_batches': { 'piston': { 'action_dist_inputs': np.ndarray((2500, 2), dtype=float32, min=0.0, max=0.034, mean=0.017),
+                                  'action_logp': np.ndarray((2500,), dtype=float32, min=-8.966, max=-0.952, mean=-1.462),
+                                  'actions': np.ndarray((2500, 1), dtype=float32, min=-4.138, max=3.693, mean=-0.006),
+                                  'advantages': np.ndarray((2500,), dtype=float32, min=-16.666, max=5.655, mean=-1.1),
+                                  'agent_index': np.ndarray((2500,), dtype=int64, min=0.0, max=9.0, mean=4.5),
+                                  'eps_id': np.ndarray((2500,), dtype=int64, min=4.2927213236376557e+17, max=5.7298813787279136e+17, mean=5.017049991403146e+17),
+                                  'infos': np.ndarray((2500,), dtype=object, head={}),
+                                  'new_obs': np.ndarray((2500, 457, 120, 3), dtype=uint8, min=58.0, max=221.0, mean=74.142),
+                                  'obs': np.ndarray((2500, 457, 120, 3), dtype=uint8, min=58.0, max=221.0, mean=74.142),
+                                  'rewards': np.ndarray((2500,), dtype=float32, min=-11.211, max=4.881, mean=-0.135),
+                                  't': np.ndarray((2500,), dtype=int64, min=0.0, max=125.0, mean=62.004),
+                                  'terminateds': np.ndarray((2500,), dtype=bool, min=0.0, max=1.0, mean=0.004),
+                                  'truncateds': np.ndarray((2500,), dtype=bool, min=0.0, max=1.0, mean=0.004),
+                                  'unroll_id': np.ndarray((2500,), dtype=int64, min=10.0, max=39.0, mean=24.42),
+                                  'value_targets': np.ndarray((2500,), dtype=float32, min=-16.687, max=5.634, mean=-1.121),
+                                  'values_bootstrapped': np.ndarray((2500,), dtype=float32, min=-0.021, max=0.0, mean=-0.021),
+                                  'vf_preds': np.ndarray((2500,), dtype=float32, min=-0.021, max=-0.02, mean=-0.021)}},
+  'type': 'MultiAgentBatch'}
+

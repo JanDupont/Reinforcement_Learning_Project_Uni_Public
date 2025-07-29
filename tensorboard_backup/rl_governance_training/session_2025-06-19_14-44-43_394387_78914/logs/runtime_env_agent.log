@@ -1,0 +1,12 @@
+2025-06-19 14:44:44,434	INFO runtime_env_agent.py:196 -- Starting runtime env agent at pid 78995
+2025-06-19 14:44:44,434	INFO runtime_env_agent.py:197 -- Parent raylet pid is 78992
+2025-06-19 14:44:44,435	INFO runtime_env_agent.py:253 -- Listening to address 127.0.0.1, port 61944
+2025-06-19 14:44:44,949	INFO runtime_env_agent.py:373 -- Creating runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}} with timeout 600 seconds.
+2025-06-19 14:44:44,950	INFO runtime_env_agent.py:419 -- Successfully created runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, the context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/Users/jandupont/miniconda3/envs/PistonBallPPO/bin/python", "override_worker_entrypoint": null, "java_jars": []}
+2025-06-19 14:44:49,300	INFO runtime_env_agent.py:455 -- Runtime env already created successfully. Env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/Users/jandupont/miniconda3/envs/PistonBallPPO/bin/python", "override_worker_entrypoint": null, "java_jars": []}
+2025-06-19 14:44:49,331	INFO runtime_env_agent.py:455 -- Runtime env already created successfully. Env: {"env_vars": {"PL_DISABLE_FORK": "1"}}, context: {"command_prefix": [], "env_vars": {"PL_DISABLE_FORK": "1"}, "py_executable": "/Users/jandupont/miniconda3/envs/PistonBallPPO/bin/python", "override_worker_entrypoint": null, "java_jars": []}
+2025-06-20 04:42:30,416	INFO runtime_env_agent.py:526 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-06-20 04:42:30,423	INFO runtime_env_agent.py:526 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-06-20 04:42:30,424	INFO runtime_env_agent.py:526 -- Got request from raylet to decrease reference for runtime env: {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-06-20 04:42:30,424	INFO runtime_env_agent.py:135 -- Unused runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}}.
+2025-06-20 04:42:30,424	INFO runtime_env_agent.py:273 -- Runtime env {"env_vars": {"PL_DISABLE_FORK": "1"}} removed from env-level cache.
